@@ -53,7 +53,7 @@ while True:
     end_time = time.time()
 
     if end_time - begin_time >= 10 or next_begin[0] != next_word[3] or len(next_begin) != 4:
-        print("超时了！you lose!")
+        print("you lose!")
         break
     else:
         begin = next_begin
