@@ -39,7 +39,7 @@ def get_name_skin():
     response = requests.get('https://pvp.qq.com/web201605/js/herolist.json')
     datas = response.json()
     # print(datas)
-    with open("test.txt", "w", encoding='utf-8') as f:
+    with open("../test.txt", "w", encoding='utf-8') as f:
         for data in datas:
             name = data['cname']
             # print(name)
