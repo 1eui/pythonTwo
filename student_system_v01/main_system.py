@@ -7,6 +7,7 @@
 @Date    ：2023/10/17 18:42 
 """
 import manager_class
+import manager_grades
 
 if __name__ == "__main__":
     while True:
@@ -17,25 +18,32 @@ if __name__ == "__main__":
         print("4. 删除学生")
         print("5. 修改学生")
         print("6. 对学生排序")
-        print("7. 退出")
+        print("7. 为单个学生添加成绩")
+        print("8. 为所有学生添加成绩")
+        print("9. 退出")
 
-        choice = input("输入你想进行的操作(1/2/3/4/5/6/7): ")
+        choice = input("输入你想进行的操作(1/2/3/4/5/6/7/8/9): ")
 
-        manger = manager_class.Manager()
+        manger_student = manager_class.Manager()
+        manger_grade = manager_grades.ManagerGrades()
 
         if choice == "1":
-            manger.add_student()
+            manger_student.add_student()
         elif choice == "2":
-            manger.view_students()
+            manger_student.view_students()
         elif choice == "3":
-            manger.find_student_by_id()
+            manger_student.find_student_by_id()
         elif choice == "4":
-            manger.delete_student()
+            manger_student.delete_student()
         elif choice == "5":
-            manger.update_student()
+            manger_student.update_student()
         elif choice == "6":
-            manger.students_sort()
+            manger_student.students_sort()
         elif choice == "7":
+            manger_grade.add_grade_to_student()
+        elif choice == "8":
+            manger_grade.add_grade_to_students()
+        elif choice == "9":
             print("再见!")
             break
         else:
