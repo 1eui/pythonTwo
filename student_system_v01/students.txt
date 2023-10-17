@@ -1,6 +1,7 @@
-9,as,123
-8,w,123
-4,rui,1234
-3,zhang,12398
-2,xin,123456
-1,xu,123
+3-zhang1-19-woman-{'math': 90, 'psychology': 99}
+4-zhang2-19-woman-{'math': 90, 'psychology': 99}
+5-zhang3-19-woman-{'math': 90, 'psychology': 99}
+6-zhang4-19-woman-{'math': 90, 'psychology': 99}
+7-zhang5-19-woman-{'math': 90, 'psychology': 99}
+1-ma-21-woman-{'ÊýÑ§': 90, 'Ó¢Óï': 101}
+10-liu-20-man-{'go': 123}
