@@ -67,8 +67,10 @@ def get_job_name(url):
 
 
 if __name__ == '__main__':
-    jobs = [100103, 100109]  # java c++ php python
-    for job in jobs:
-        for page in range(2, 11):
-            get_job_name(f"https://www.zhipin.com/web/geek/job?city=101280100&position={job}&page={page}")
-            time.sleep(900)
+    jobs = [100101, 100102, 100103, 100109]  # java c++ php python
+    citys = [101020100, 101280100]
+    for city in citys:
+        for job in jobs:
+            for page in range(2, 11):
+                get_job_name(f"https://www.zhipin.com/web/geek/job?city=101280100&position={job}&page={page}")
+                time.sleep(900)
